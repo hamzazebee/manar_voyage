@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manar voyage</title>
+</head>
+
+<body>
+    <header>
+        <h1>manar voyage</h1>
+    </header>
+
+    <div id="centre">
+        <aside>
+            <nav>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#prestations">Présentations</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#connecte">s'identifier</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="accueil">
+                <img src="logo.jpeg.jpeg" alt="logo Manar voyage">
+                <h2>Let's go !</h2>
+                <p>Notre agence de voyage, forte d'une expérience de plus de 20 ans, saura vous guider pour créer le
+                    séjour de vos rêves. Avec plus de 5000 clients satisfaits à notre actif, nous savons répondre à
+                    toutes les demandes et dans des délais restreints.</p>
+                <p>Notre service clientèle est aux petits soins à
+                    n'importe quelle heure de la journée, et n'importe quel jour de la semaine, pour assurer sérenité et
+                    bien-être. L'objectif est simple : <strong>profitez de votre séjour !</strong></p>
+                <span></span>
+            </section>
+            <section id="prestations">
+                <h2>Prestations</h2>
+                <div class="service">
+                    <img src="" alt="avion">
+                    <h3>Transport</h3>
+                    <p>Nous garantissons un transport agréable et sans stress. Grâce à une organisation
+                        solide, vous n'aurez qu'à vous laisser guider par nos conseillers.</p>
+                </div>
+
+                <div class="service">
+                    <img src="./images/carte logo-10.svg" alt="carte">
+                    <h3>Visites</h3>
+                    <p>Découvrez des endroits incroyables et vivez des expériences inédites grâce à nos guides locaux
+                        sur chaque planète.</p>
+                </div>
+
+                <div class="service">
+                    <img src="./images/parasol logo-12.svg" alt="parasol">
+                    <h3>Plaisir</h3>
+                    <p>Détendez-vous en profitant de grandes piscines et de cocktails généreusement préparés pour vous
+                        dans notre sélection d'hotels de luxe.</p>
+                </div>
+                <span></span>
+            </section>
+
+            <section id="galerie">
+                <h2>Galerie</h2>
+                <img src="./images/papillons.jpg" alt="papillons">
+                <img src="./images/ballon.jpg" alt="ballon">
+                <img src="./images/maldives.jpg" alt="plage">
+                <img src="./images/couple.jpg" alt="couple">
+                <span></span>
+            </section>
+
+            <section id="connecte">
+                <h2>connecter a votre compte</h2>
+                
+
+                <form  method="post" enctype="text/plain" id="loginform" onsubmit="return checkCredentials()"  >
+                    
+
+                    <label for="email">Votre email :</label>
+                    <input type="email" id="email" name="Votre email " required>
+
+                    <label for="mdp">Mot de passe :</label>
+                    <input type="password" id="mdp" name="Mot de passe" required>
+                    <button type="submit">Envoyer !</button>
+                    <br>
+                    
+                </form>
+
+            </section>
+            <section id="newaccount">
+                <p>* si vous niavez pas encore de compte <br>rejoindez nous Facilement!</p>
+                <a href="signup.html"><button id="crer" >Créer un compte</button></a>
+
+            </section>
+            <script>
+                function checkCredentials() {
+                  var email = document.getElementById('email').value;
+                  var password = document.getElementById('mdp').value;
+                  if(email === 'x@admin.admin' && password === 'admin') {
+                    window.location.href = 'admin.html';
+                    return false; // Empêche l'envoi du formulaire
+                  }
+                  alert('Identifiants incorrects.');
+                  return false; // Empêche l'envoi du formulaire si les identifiants sont incorrects
+                }
+                </script>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Projet 2024 - &copy; WEB - Manar voyage</p>
+    </footer>
+   
+    
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tableau de Bord Admin - Agence de Voyage</title>
+<link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+<header>
+  <h1>Tableau de Bord de l'Administrateur</h1>
+</header>
+<main>
+    <section>
+        <h2>Gestion des Utilisateurs</h2>
+        <form id="gestionUtilisateurs">
+          <div>
+            <label for="nomUtilisateur">Nom :</label>
+            <input type="text" id="nomUtilisateur" name="nom" required>
+          </div>
+          <div>
+            <label for="emailUtilisateur">Email :</label>
+            <input type="email" id="emailUtilisateur" name="email" required>
+          </div>
+          <div>
+            <label for="mdpUtilisateur">Mot de passe :</label>
+            <input type="password" id="mdpUtilisateur" name="motDePasse" required>
+          </div>
+          <div>
+            <button type="button" onclick="ajouterUtilisateur()">Ajouter Utilisateur</button>
+            <button type="button" onclick="supprimerUtilisateur()">Supprimer Utilisateur</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Gestion des Voyages</h2>
+        <form id="gestionVoyages">
+          <div>
+            <label for="pointDepart">Point de départ :</label>
+            <input type="text" id="pointDepart" name="pointDepart" required>
+          </div>
+          <div>
+            <label for="destination">Destination :</label>
+            <input type="text" id="destination" name="destination" required>
+          </div>
+          <div>
+            <label for="dateVoyage">Date du voyage :</label>
+            <input type="date" id="dateVoyage" name="dateVoyage" required>
+          </div>
+          <div>
+            <label for="idVoyage">ID Voyage :</label>
+            <input type="text" id="idVoyage" name="idVoyage" required>
+          </div>
+          <div>
+            <button type="button" onclick="ajouterVoyage()">Ajouter Voyage</button>
+            <button type="button" onclick="supprimerVoyage()">Supprimer Voyage</button>
+          </div>
+        </form>
+      </section>
+      
+      <script>
+      // Fonction pour ajouter un voyage
+      function ajouterVoyage() {
+        // Ici, vous pouvez ajouter le code pour traiter l'ajout d'un voyage
+        // Par exemple, enregistrer les données dans une base de données ou un fichier
+      }
+      
+      // Fonction pour supprimer un voyage
+      function supprimerVoyage() {
+        // Ici, vous pouvez ajouter le code pour traiter la suppression d'un voyage
+        // Par exemple, supprimer les données de la base de données ou d'un fichier
+      }
+      </script>
+      
+      
+      <script>
+      // Fonction pour ajouter un utilisateur
+      function ajouterUtilisateur() {
+        // Ici, vous pouvez ajouter le code pour traiter l'ajout d'un utilisateur
+        // Par exemple, enregistrer les données dans une base de données ou un fichier
+      }
+      
+      // Fonction pour supprimer un utilisateur
+      function supprimerUtilisateur() {
+        // Ici, vous pouvez ajouter le code pour traiter la suppression d'un utilisateur
+        // Par exemple, supprimer les données de la base de données ou d'un fichier
+      }
+      </script>
+      <footer>
+        <p>Projet 2024 - &copy; WEB - Manar voyage</p>
+    </footer>
+   
+</main>
+</body>
+</html>
