@@ -10,17 +10,17 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Récupérer l'ID du voyage à supprimer
-    $idVoyage = $_POST['idVoyage']; 
+    $Email = $_POST['Email']; 
 
     // Préparer la requête SQL pour supprimer le voyage
-    $stmt = $pdo->prepare("DELETE FROM voyage WHERE id = ?");
-    $stmt->execute([$idVoyage]);
+    $stmt = $pdo->prepare("DELETE FROM client WHERE email = ?");
+    $stmt->execute([$Email]);
 
     // Vérifier si la suppression a été effectuée
     if ($stmt->rowCount() > 0) {
-        echo "Le voyage a été supprimé avec succès.";
+        echo "Le client a été supprimé avec succès.";
     } else {
-        echo "Aucun voyage trouvé avec cet ID.";
+        echo "Aucun client trouvé avec cet email.";
     }
 } catch(PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
